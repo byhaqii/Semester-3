@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styleSlideShow.css">
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            var sliderImages = ["gambar1.jpg", "gambar2.jpg", "gambar3.jpg"];
+            var currentImageIndex = 0;
+
+            function showNextImage() {
+                currentImageIndex++;
+                if (currentImageIndex >= sliderImages.length) {
+                    currentImageIndex = 0;
+                }
+                $("#sliderImage").attr("src", "img/" + sliderImages[currentImageIndex]);
+                $("#sliderTitle").text(sliderImages[currentImageIndex]);
+            }
+
+            setInterval(showNextImage, 3000); // Change image every 3 seconds
+        });
+    </script>
+</head>
+<body>
+    <div id="slider">
+        <img id="sliderImage" src="img/gambar1.jpg" width="300" height="300">
+        <h3 id="sliderTitle">gambar1.jpg</h3>
+    </div>
+</body>
+</html>
+

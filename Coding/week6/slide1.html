@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styleslide.css" />
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#flip").click(function() {
+                $("#kotak").slideToggle("slow");
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="flip">Klik untuk Efek Slide</button>
+    <div id="kotak">Selamat Pagi</div>
+</body>
+</html>
+
