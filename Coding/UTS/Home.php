@@ -90,9 +90,9 @@
 
     <div class="container mt-4">
         <div class="slider">
-            <img src="banner1.jpg" alt="Banner 1">
-            <img src="banner2.jpg" style="display:none;" alt="Banner 2">
-            <img src="banner3.jpg" style="display:none;" alt="Banner 3">
+            <img src="slide1.jpg" alt="Banner 1">
+            <img src="slide2.jpg" style="display:none;" alt="Banner 2">
+            <img src="slide3.jpg" style="display:none;" alt="Banner 3">
         </div>
 
         <div class="profile mt-4">
